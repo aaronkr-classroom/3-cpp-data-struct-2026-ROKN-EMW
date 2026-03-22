@@ -13,13 +13,13 @@ int main() {
     string input;
 
     // 문자열 계속 입력
-    while (cin >> input) {
+    while (getline(cin, input)) {
         words.push_back(input);
     }
 
     // 입력 확인
     if (words.size() == 0) {
-        cout << "Error: No words entered!" << endl;
+        cout << "입력된 단어가 없습니다." << endl;
         return 1;
     }
 
